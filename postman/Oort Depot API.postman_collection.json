@@ -1,0 +1,134 @@
+{
+  "info": {
+    "_postman_id": "3127d65e-17ce-4061-a5ba-00ef384f1dc4",
+    "name": "Oort Depot API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "40828423"
+  },
+  "item": [
+    {
+      "name": "https://oort.qahacking.ru/wp-admin/Поиск груза Oort",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "application/json, text/javascript, */*; q=0.01"
+          },
+          {
+            "key": "accept-language",
+            "value": "ru,en;q=0.9"
+          },
+          {
+            "key": "origin",
+            "value": "https://oort.qahacking.ru"
+          },
+          {
+            "key": "priority",
+            "value": "u=1, i"
+          },
+          {
+            "key": "referer",
+            "value": "https://oort.qahacking.ru/novosti-stancii/"
+          },
+          {
+            "key": "sec-ch-ua",
+            "value": "\"Chromium\";v=\"148\", \"YaBrowser\";v=\"26.6\", \"Not/A)Brand\";v=\"99\", \"Yowser\";v=\"2.5\""
+          },
+          {
+            "key": "sec-ch-ua-mobile",
+            "value": "?0"
+          },
+          {
+            "key": "sec-ch-ua-platform",
+            "value": "\"Windows\""
+          },
+          {
+            "key": "sec-fetch-dest",
+            "value": "empty"
+          },
+          {
+            "key": "sec-fetch-mode",
+            "value": "cors"
+          },
+          {
+            "key": "sec-fetch-site",
+            "value": "same-origin"
+          },
+          {
+            "key": "user-agent",
+            "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 YaBrowser/26.6.0.0 Safari/537.36"
+          },
+          {
+            "key": "x-requested-with",
+            "value": "XMLHttpRequest"
+          },
+          {
+            "key": "Cookie",
+            "value": "_ym_uid=1784384462791353844; _ym_d=1784384462; _ga=GA1.1.1362503806.1784388289; _ym_isad=1; _ym_visorc=w; _ga_7TE6TL3L48=GS2.1.s1784466905$o4$g1$t1784467032$j46$l0$h0"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "formData",
+              "value": "%D0%9F%D0%BE%D0%B8%D1%81%D0%BA=12&fusion_privacy_store_ip_ua=false&fusion_privacy_expiration_interval=48&privacy_expiration_action=anonymize&fusion-form-nonce-710=abf1bb2bdc&fusion-fields-hold-private-data=",
+              "type": "text"
+            },
+            {
+              "key": "action",
+              "value": "fusion_form_submit_ajax",
+              "type": "text"
+            },
+            {
+              "key": "fusion_form_nonce",
+              "value": "abf1bb2bdc",
+              "type": "text"
+            },
+            {
+              "key": "form_id",
+              "value": "710",
+              "type": "text"
+            },
+            {
+              "key": "post_id",
+              "value": "698",
+              "type": "text"
+            },
+            {
+              "key": "field_labels",
+              "value": "{\"Поиск\":\"\"}",
+              "type": "text"
+            },
+            {
+              "key": "field_types",
+              "value": "{\"fusion_builder_container_3-1\":\"fusion_builder_container\",\"Поиск\":\"text\",\"submit_1\":\"submit\"}",
+              "type": "text"
+            },
+            {
+              "key": "hidden_field_names",
+              "value": "[]",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://oort.qahacking.ru/wp-admin/admin-ajax.php",
+          "protocol": "https",
+          "host": [
+            "oort",
+            "qahacking",
+            "ru"
+          ],
+          "path": [
+            "wp-admin",
+            "admin-ajax.php"
+          ]
+        },
+        "description": "Generated from cURL: curl 'https://oort.qahacking.ru/wp-admin/admin-ajax.php' \\\r\n  -H 'accept: application/json, text/javascript, */*; q=0.01' \\\r\n  -H 'accept-language: ru,en;q=0.9' \\\r\n  -H 'content-type: multipart/form-data; boundary=----WebKitFormBoundaryhlhjeBuaj2fgpVAV' \\\r\n  -b '_ym_uid=1784384462791353844; _ym_d=1784384462; _ga=GA1.1.1362503806.1784388289; _ym_isad=1; _ym_visorc=w; _ga_7TE6TL3L48=GS2.1.s1784466905$o4$g1$t1784467032$j46$l0$h0' \\\r\n  -H 'origin: https://oort.qahacking.ru' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://oort.qahacking.ru/novosti-stancii/' \\\r\n  -H 'sec-ch-ua: \"Chromium\";v=\"148\", \"YaBrowser\";v=\"26.6\", \"Not/A)Brand\";v=\"99\", \"Yowser\";v=\"2.5\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 YaBrowser/26.6.0.0 Safari/537.36' \\\r\n  -H 'x-requested-with: XMLHttpRequest' \\\r\n  --data-raw $'------WebKitFormBoundaryhlhjeBuaj2fgpVAV\\r\\nContent-Disposition: form-data; name=\"formData\"\\r\\n\\r\\n%D0%9F%D0%BE%D0%B8%D1%81%D0%BA=12&fusion_privacy_store_ip_ua=false&fusion_privacy_expiration_interval=48&privacy_expiration_action=anonymize&fusion-form-nonce-710=abf1bb2bdc&fusion-fields-hold-private-data=\\r\\n------WebKitFormBoundaryhlhjeBuaj2fgpVAV\\r\\nContent-Disposition: form-data; name=\"action\"\\r\\n\\r\\nfusion_form_submit_ajax\\r\\n------WebKitFormBoundaryhlhjeBuaj2fgpVAV\\r\\nContent-Disposition: form-data; name=\"fusion_form_nonce\"\\r\\n\\r\\nabf1bb2bdc\\r\\n------WebKitFormBoundaryhlhjeBuaj2fgpVAV\\r\\nContent-Disposition: form-data; name=\"form_id\"\\r\\n\\r\\n710\\r\\n------WebKitFormBoundaryhlhjeBuaj2fgpVAV\\r\\nContent-Disposition: form-data; name=\"post_id\"\\r\\n\\r\\n698\\r\\n------WebKitFormBoundaryhlhjeBuaj2fgpVAV\\r\\nContent-Disposition: form-data; name=\"field_labels\"\\r\\n\\r\\n{\"Поиск\":\"\"}\\r\\n------WebKitFormBoundaryhlhjeBuaj2fgpVAV\\r\\nContent-Disposition: form-data; name=\"field_types\"\\r\\n\\r\\n{\"fusion_builder_container_3-1\":\"fusion_builder_container\",\"Поиск\":\"text\",\"submit_1\":\"submit\"}\\r\\n------WebKitFormBoundaryhlhjeBuaj2fgpVAV\\r\\nContent-Disposition: form-data; name=\"hidden_field_names\"\\r\\n\\r\\n[]\\r\\n------WebKitFormBoundaryhlhjeBuaj2fgpVAV--\\r\\n'"
+      },
+      "response": []
+    }
+  ]
+}
